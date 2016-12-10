@@ -11,8 +11,35 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-
+<div class="wrapper">
+  <div class="header">
+    <div class='container'>
+      <div class="row">
+        <ul class = "nav">
+          <li> Welcome </li>
+          <li> Portfolio </li>
+          <li> About </li>
+          <li> Contact </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  
 <%= yield %>
-
+  
+  
+  <div class="footer">
+    <div class='container'>
+      <div class="row">
+        <ul class = "social_nav nav">
+          <li class="socialMedia"> Facebook </li>
+          <li class="socialMedia"> GitHub </li>
+          <li class="socialMedia"> Twitter </li>
+          <li class="socialMedia"> LinkedIn </li>
+        </ul>
+      </div>
+    </div>      
+  </div>
+</div>
 </body>
 </html>
